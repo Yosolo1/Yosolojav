@@ -201,12 +201,12 @@ def processFile(update,bot,message,file,thread=None,jdb=None):
         bot.sendMessage(message.chat.id,finishInfo+'\n'+filesInfo,parse_mode='html')
         statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
         bot.sendMessage(-1001551132622,statInfo)
-        bot.sendMessage(-1001551132622,finishInfo+'\n'+filesInfo,parse_mode='html')
+        bot.sendMessage(-1001712734872,finishInfo+'\n'+filesInfo,parse_mode='html')
         if len(files)>0:
             txtname = str(name).split('/')[-1].split('.')[0] + '.txt'
             sendTxt(txtname,files,update,bot)
     else:
-        bot.editMessageText(message,'⚠ Hubo un error ⚠')
+        bot.editMessageText(message,'⚠️𝙴𝚛𝚛𝚘𝚛 𝚎𝚗 𝚕𝚊 𝚗𝚞𝚋𝚎⚠️')
 
 def ddl(update,bot,message,url,file_name='',thread=None,jdb=None):
     downloader = Downloader()
